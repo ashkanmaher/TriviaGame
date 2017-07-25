@@ -1,6 +1,5 @@
 // on submit I want to return a function called submitAnswer.
 
-$(document).ready(function(){
   var totalSeconds = 15;
   var timer = setInterval(decrement, 1000);
     function decrement() {
@@ -13,9 +12,13 @@ $(document).ready(function(){
            }
          };
     
-      });
+
       
-function submitAnswers() {
+
+$("#triviaForm").submit(function(event) {
+   event.preventDefault();
+
+
 	var totalQuestion = 5; 
 	var correct = 0;
   var incorrect = 0;
@@ -55,6 +58,7 @@ function submitAnswers() {
 
     return false;
 
- };
+ });
+
   
     
