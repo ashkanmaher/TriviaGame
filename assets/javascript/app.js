@@ -1,22 +1,23 @@
 // on submit I want to return a function called submitAnswer.
 
-  var totalSeconds = 15;
-  var timer = setInterval(decrement, 1000);
-    function decrement() {
-      totalSeconds--;
+  $(document).ready(function(){
+   var totalSeconds = 15;
+   var timer = setInterval(decrement, 1000);
+     function decrement() {
+       totalSeconds--;
         $("#timeLeft").html("<h3>Time Remaining: " + totalSeconds + "</h3>");
-        if (totalSeconds === 0) {
-          clearInterval(timer);
-          return submitAnswers();
-          
-           }
-         };
-    
+         if (totalSeconds === 0) {
+           clearInterval(timer);
+           return submitAnswers();
+           
+            }
+          };
+     
+      });
 
       
 
-$("#triviaForm").submit(function(event) {
-   event.preventDefault();
+function submitAnswers() {
 
 
 	var totalQuestion = 5; 
@@ -50,7 +51,7 @@ $("#triviaForm").submit(function(event) {
      
       var finished = document.getElementById("allDone").innerHTML = "All Done!";
      
-      document.getElementById("triviaForm").style.display = "none";
+      var hide = document.getElementById("triviaForm").style.display = "none";
 
 
 
@@ -58,7 +59,7 @@ $("#triviaForm").submit(function(event) {
 
     return false;
 
- });
+ };
 
   
     
