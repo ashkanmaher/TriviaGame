@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Trivia Game</title>
+<link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+ <body>
+  <div id="container">
+   <header>
+  	 <h1>Lakers Trivia Game!</h1>
+  	 <div id="timeLeft"></div>
+		</header>  
+    <section>
+		 
+		 <div id="answerNum">
+		  <div id="allDone"></div>
+		  <div id="correctAnswers"></div>
+		  <div id="incorrectAnswers"></div>
+		 </div> 
+		  <form id="triviaForm" onsubmit="return submitAnswers()">
+				<h3>1. Lakers won the #2 pick in the 2017 NBA Draft.</h3>
+		     <span><input type="radio" name="a1" value="true" id="Answer1a">true</span>
+		     <span><input type="radio" name="a1" value="false" id="Answer1b">false</span>
+
+		     <h3>2. The current president of the Laker organization is Phil Jackson.</h3>
+		     <span><input type="radio" name="a2" value="true" id="Answer2a">true</span>
+		     <span><input type="radio" name="a2" value="false" id="Answer2b">false</span>
+
+		     <h3>3. Lonso Ball is the new starting point guard for the Lakers.</h3>
+		     <span><input type="radio" name="a3" value="true" id="Answer3a">true</span>
+		     <span><input type="radio" name="a3" value="false" id="Answer3b">false</span>
+
+		     <h3>4. Rob Pelinka is the current general manager of the Lakers.</h3>
+		     <span><input type="radio" name="a4" value="true" id="Answer4a">true</span>
+		     <span><input type="radio" name="a4" value="false" id="Answer4b">false</span>
+
+		     <h3>5. Shaquille O'neal played alongside Magic Johnson to win 3 back to back championships.</h3>
+		     <span><input type="radio" name="a5" value="true" id="Answer5a">true</span>
+		     <span><input type="radio" name="a5" value="false" id="Answer5b">false</span><br>
+
+		     <div class="submitAnswers"><input type="submit" value="Done"></div>
+
+		  </form>	
+    </section>
+
+  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="assets/javascript/app.js"></script>
+ 
+ 
+
+
+  
+
+
+
+
+ </body>
+</html>
